@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="Result"
+  >
+    0
+  </div>
+  <div
+    className="Body"
+  >
+    <div
+      className="left-side"
+    >
+      <div
+        className="Clear btn"
+        onClick={[Function]}
+      >
+        clear
+      </div>
+      <div
+        className="row"
+      >
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          7
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          8
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          9
+        </span>
+      </div>
+      <div
+        className="row"
+      >
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          4
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          5
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          6
+        </span>
+      </div>
+      <div
+        className="row"
+      >
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          1
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          2
+        </span>
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          3
+        </span>
+      </div>
+      <div
+        className="row last-num"
+      >
+        <span
+          className="btn"
+          onClick={[Function]}
+        >
+          0
+        </span>
+      </div>
+    </div>
+    <div
+      className="right-side text-center"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="Divide btn"
+          onClick={[Function]}
+        >
+          ÷
+        </div>
+        <div
+          className="Abstract btn"
+          onClick={[Function]}
+        >
+          -
+        </div>
+        <div
+          className="Multiply btn"
+          onClick={[Function]}
+        >
+          *
+        </div>
+        <div
+          className="Add btn"
+          onClick={[Function]}
+        >
+          +
+        </div>
+        <div
+          className="Equal btn"
+          onClick={[Function]}
+        >
+          =
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
