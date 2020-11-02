@@ -1,9 +1,8 @@
 import React from 'react';
-import './Operation.css';
 
 const Equal: React.FC<OperationsProps> = ({ onClick, sign }) => {
   return (
-    <div className='Equal btn' onClick={onClick}>
+    <div className='btn' onClick={onClick}>
       {sign && sign}
     </div>
   );

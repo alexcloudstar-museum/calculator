@@ -1,11 +1,19 @@
 import React from 'react';
-import './Operation.css';
+import styled from 'styled-components';
+
+const ClearWrapper = styled.div`
+  font-size: 30px;
+  padding: 20px 0;
+  color: #525252;
+  text-align: center;
+  border-bottom: 0;
+`;
 
 const Clear: React.FC<OperationsProps> = ({ onClick }) => {
   return (
-    <div className='Clear btn' onClick={onClick}>
+    <ClearWrapper className='btn' onClick={onClick}>
       clear
-    </div>
+    </ClearWrapper>
   );
 };
 

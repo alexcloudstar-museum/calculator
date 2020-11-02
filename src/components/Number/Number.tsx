@@ -1,10 +1,9 @@
 import React from 'react';
-import './Number.css';
 
-const Number = (props: any) => {
+const Number: React.FC<NumberProps> = ({ onClick, number }) => {
   return (
-    <span className='btn' onClick={props.onClick}>
-      {props.number}
+    <span className='btn' onClick={onClick}>
+      {number}
     </span>
   );
 };

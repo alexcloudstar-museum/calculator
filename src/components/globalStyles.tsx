@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
 body {
   background-image: linear-gradient(
     to left top,
@@ -73,3 +76,14 @@ body {
   border-top: 0;
   border-bottom: 0;
 }
+.last-num .btn {
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 7px;
+    border-top: 0;
+}
+`;
+
+export default GlobalStyle;
