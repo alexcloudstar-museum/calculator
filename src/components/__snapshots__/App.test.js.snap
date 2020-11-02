@@ -5,7 +5,7 @@ exports[`renders a snapshot 1`] = `
   className="App"
 >
   <div
-    className="Result"
+    className="sc-bdfBwQ jMtyEa"
   >
     0
   </div>
@@ -16,7 +16,7 @@ exports[`renders a snapshot 1`] = `
       className="left-side"
     >
       <div
-        className="Clear btn"
+        className="sc-gsTCUz fsOPHv btn"
         onClick={[Function]}
       >
         clear
@@ -105,31 +105,31 @@ exports[`renders a snapshot 1`] = `
         className="row"
       >
         <div
-          className="Divide btn"
+          className="btn"
           onClick={[Function]}
         >
           ÷
         </div>
         <div
-          className="Abstract btn"
+          className="btn"
           onClick={[Function]}
         >
           -
         </div>
         <div
-          className="Multiply btn"
+          className="btn"
           onClick={[Function]}
         >
           *
         </div>
         <div
-          className="Add btn"
+          className="btn"
           onClick={[Function]}
         >
           +
         </div>
         <div
-          className="Equal btn"
+          className="btn"
           onClick={[Function]}
         >
           =

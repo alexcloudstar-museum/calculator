@@ -14,3 +14,9 @@ type OperationsProps = {
   sign?: string;
   onClick: () => void;
 };
+
+type NumberProps = {
+  number: number;
+  onClick: any;
+  onKeyPress?: any;
+};

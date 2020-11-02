@@ -1,9 +1,8 @@
 import React from 'react';
-import './Operation.css';
 
 const Add: React.FC<OperationsProps> = ({ sign, onClick }) => {
   return (
-    <div className='Add btn' onClick={onClick}>
+    <div className='btn' onClick={onClick}>
       {sign && sign}
     </div>
   );
