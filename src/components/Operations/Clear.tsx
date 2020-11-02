@@ -1,8 +1,12 @@
-import React from "react";
+import React from 'react';
 import './Operation.css';
 
-const Clear = (props) => {
-  return <div className="Clear btn" onClick={props.onClick}>clear</div>;
+const Clear: React.FC<OperationsProps> = ({ onClick }) => {
+  return (
+    <div className='Clear btn' onClick={onClick}>
+      clear
+    </div>
+  );
 };
 
 export default Clear;

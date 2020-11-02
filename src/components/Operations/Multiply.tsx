@@ -1,8 +1,12 @@
-import React from "react";
-import "./Operation.css";
+import React from 'react';
+import './Operation.css';
 
-const Multiply = props => {
-  return <div className="Multiply btn" onClick={props.onClick}>{props.sign}</div>;
+const Multiply: React.FC<OperationsProps> = ({ onClick, sign }) => {
+  return (
+    <div className='Multiply btn' onClick={onClick}>
+      {sign && sign}
+    </div>
+  );
 };
 
 export default Multiply;

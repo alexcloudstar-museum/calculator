@@ -1,8 +1,12 @@
-import React from "react";
-import "./Number.css";
+import React from 'react';
+import './Number.css';
 
-const Number = props => {
-  return <span className="btn" onClick={props.onClick}>{props.number}</span>;
+const Number = (props: any) => {
+  return (
+    <span className='btn' onClick={props.onClick}>
+      {props.number}
+    </span>
+  );
 };
 
 export default Number;

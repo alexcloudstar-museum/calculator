@@ -1,8 +1,12 @@
-import React from "react";
-import "./Operation.css";
+import React from 'react';
+import './Operation.css';
 
-const Abstract = props => {
-  return <div className="Abstract btn" onClick={props.onClick}>{props.sign}</div>;
+const Abstract: React.FC<OperationsProps> = ({ onClick, sign }) => {
+  return (
+    <div className='Abstract btn' onClick={onClick}>
+      {sign && sign}
+    </div>
+  );
 };
 
 export default Abstract;
