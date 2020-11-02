@@ -9,14 +9,6 @@ import Add from './Operations/Add';
 import Equal from './Operations/Equal';
 import Multiply from './Operations/Multiply';
 
-type AppProps = {
-  result: number;
-  numbers: number[];
-  num0: number;
-  num1: number;
-  method: string;
-};
-
 class App extends React.Component<{}, AppProps> {
   handleKeyPress: any;
   constructor(props: AppProps) {
