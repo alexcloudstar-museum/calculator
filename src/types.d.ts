@@ -5,3 +5,12 @@ type AppProps = {
   num1: number;
   method: string;
 };
+
+type ResultProps = {
+  result: number;
+};
+
+type OperationsProps = {
+  sign?: string;
+  onClick: () => void;
+};

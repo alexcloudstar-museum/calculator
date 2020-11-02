@@ -1,10 +1,10 @@
 import React from 'react';
 import './Operation.css';
 
-const Abstract = (props: any) => {
+const Abstract: React.FC<OperationsProps> = ({ onClick, sign }) => {
   return (
-    <div className='Abstract btn' onClick={props.onClick}>
-      {props.sign}
+    <div className='Abstract btn' onClick={onClick}>
+      {sign && sign}
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Operation.css';
 
-const Clear = (props: any) => {
+const Clear: React.FC<OperationsProps> = ({ onClick }) => {
   return (
-    <div className='Clear btn' onClick={props.onClick}>
+    <div className='Clear btn' onClick={onClick}>
       clear
     </div>
   );

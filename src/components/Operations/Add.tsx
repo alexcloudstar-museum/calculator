@@ -1,10 +1,10 @@
 import React from 'react';
 import './Operation.css';
 
-const Add = (props: any) => {
+const Add: React.FC<OperationsProps> = ({ sign, onClick }) => {
   return (
-    <div className='Add btn' onClick={props.onClick}>
-      {props.sign}
+    <div className='Add btn' onClick={onClick}>
+      {sign && sign}
     </div>
   );
 };

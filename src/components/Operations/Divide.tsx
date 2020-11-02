@@ -1,10 +1,10 @@
 import React from 'react';
 import './Operation.css';
 
-const Divide = (props: any) => {
+const Divide: React.FC<OperationsProps> = ({ onClick, sign }) => {
   return (
-    <div className='Divide btn' onClick={props.onClick}>
-      {props.sign}
+    <div className='Divide btn' onClick={onClick}>
+      {sign && sign}
     </div>
   );
 };

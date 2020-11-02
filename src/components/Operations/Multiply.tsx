@@ -1,10 +1,10 @@
 import React from 'react';
 import './Operation.css';
 
-const Multiply = (props: any) => {
+const Multiply: React.FC<OperationsProps> = ({ onClick, sign }) => {
   return (
-    <div className='Multiply btn' onClick={props.onClick}>
-      {props.sign}
+    <div className='Multiply btn' onClick={onClick}>
+      {sign && sign}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Result.css';
 
-const Result = ({ result }: number) => {
+const Result: React.FC<ResultProps> = ({ result }) => {
   return <div className='Result'>{result}</div>;
 };
 
