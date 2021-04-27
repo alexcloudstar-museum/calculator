@@ -1,7 +1,12 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import GlobalStyles from './GlobalStyles';
+import { CalculatorContainer } from './shared/containers';
 
-const App: FC = () => {
-  return <div>App</div>;
-};
+const App: FC = () => (
+  <div className='App'>
+    <GlobalStyles />
+    <CalculatorContainer />
+  </div>
+);
 
 export default App;
