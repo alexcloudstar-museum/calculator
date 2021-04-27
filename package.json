@@ -2,6 +2,7 @@
   "homepage": "https://alexcloudstar.github.io/calculator/",
   "name": "calculator",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
