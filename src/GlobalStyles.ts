@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 body {
   background-image: linear-gradient(
     to left top,
@@ -81,9 +81,8 @@ body {
     padding: 0;
     display: inline-block;
     text-align: center;
-    padding-bottom: 7px;
-    border-top: 0;
+    border-bottom: 0;
 }
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;
