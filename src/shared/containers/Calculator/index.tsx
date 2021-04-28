@@ -1,8 +1,7 @@
 import { FC, useState } from 'react';
-import { Body, LeftSide } from '..';
-import { divide, subtract, multiply, add, showResult } from '../../../utils';
-import { Result, Operations, Number } from '../../components';
-import RightSide from '../RightSide';
+import { Body } from '..';
+
+import { Result, Number } from '../../components';
 
 const CalculatorContainer: FC = () => {
   const [result, setResult] = useState(0);
