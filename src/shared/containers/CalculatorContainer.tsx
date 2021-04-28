@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { divide, subtract, multiply, add, showResult } from '../../utils';
 import { Result, Operations, ClearWrapper, Number } from '../components';
 
 const CalculatorContainer: FC = () => {
@@ -21,49 +22,6 @@ const CalculatorContainer: FC = () => {
     setResult(number);
   };
 
-  const handleKeyPress = () => {};
-
-  const divide = (num0: number, num1: number) => {
-    setMethod('divide');
-    return num0 / num1;
-  };
-
-  const add = (num0: number, num1: number) => {
-    setMethod('add');
-    return num0 + num1;
-  };
-
-  const subtract = (num0: number, num1: number) => {
-    setMethod('add');
-    return num0 - num1;
-  };
-
-  const multiply = (num0: number, num1: number) => {
-    setMethod('multiply');
-    return num0 * num1;
-  };
-
-  const showResult = () => {
-    let localResult = result;
-
-    switch (method) {
-      case 'add':
-        localResult = add(num0, num1);
-        return setResult(localResult);
-      case 'subtract':
-        localResult = subtract(num0, num1);
-        return setResult(localResult);
-      case 'divide':
-        localResult = divide(num0, num1);
-        return setResult(localResult);
-      case 'multiply':
-        localResult = multiply(num0, num1);
-        return setResult(localResult);
-      default:
-        return localResult;
-    }
-  };
-
   const renderNumbers = () => {
     const resultsRender: any[] = [];
     for (let i = 0; i < numbers.length; i += 3) {
@@ -73,7 +31,6 @@ const CalculatorContainer: FC = () => {
             <Number
               key={number}
               number={number}
-              onKeyPress={handleKeyPress}
               onClick={() => setNumbersMethod(number)}
             />
           ))}
@@ -95,11 +52,22 @@ const CalculatorContainer: FC = () => {
           {renderNumbers()}
         </div>
         <div className='right-side text-center'>
-          <Operations sign='/' onClick={() => divide(num0, num1)} />
-          <Operations sign='-' onClick={() => subtract(num0, num1)} />
-          <Operations sign='*' onClick={() => multiply(num0, num1)} />
-          <Operations sign='+' onClick={() => add(num0, num1)} />
-          <Operations sign='=' onClick={() => showResult()} />
+          <Operations sign='/' onClick={() => divide(num0, num1, setMethod)} />
+          <Operations
+            sign='-'
+            onClick={() => subtract(num0, num1, setMethod)}
+          />
+          <Operations
+            sign='*'
+            onClick={() => multiply(num0, num1, setMethod)}
+          />
+          <Operations sign='+' onClick={() => add(num0, num1, setMethod)} />
+          <Operations
+            sign='='
+            onClick={() =>
+              showResult({ result, num0, num1, setMethod, setResult, method })
+            }
+          />
         </div>
       </div>
     </>

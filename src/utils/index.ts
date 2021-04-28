@@ -1,1 +1,1 @@
-export { add, divide, subtract, multiply } from './operations';
+export { add, divide, subtract, multiply, showResult } from './operations';
