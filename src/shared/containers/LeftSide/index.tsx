@@ -1,12 +1,12 @@
 import { FC } from 'react';
 
-import { ClearWrapper, Operations } from '../../components';
+import { ClearWrapper, Operations } from 'shared/components';
 
-export interface LeftSideProp {
+export interface LeftSideProps {
   clear: () => void;
 }
 
-const LeftSide: FC<LeftSideProp> = ({ children, clear }) => (
+const LeftSide: FC<LeftSideProps> = ({ children, clear }) => (
   <div className='left-side'>
     <ClearWrapper>
       <Operations sign={'clear'} onClick={clear} />

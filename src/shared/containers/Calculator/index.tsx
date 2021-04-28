@@ -1,7 +1,6 @@
 import { FC, useState } from 'react';
-import { Body } from '..';
-
-import { Result, Number } from '../../components';
+import { Body } from 'shared/containers';
+import { Result, Number } from 'shared/components';
 
 const CalculatorContainer: FC = () => {
   const [result, setResult] = useState(0);

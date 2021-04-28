@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { operationPropType } from '../../../utils/operations/operationPropType';
-import LeftSide, { LeftSideProp } from '../LeftSide';
-import RightSide from '../RightSide';
+import { operationPropType } from 'utils/operations/operationPropType';
 
-interface BodyProps extends operationPropType, LeftSideProp {}
+import { LeftSide, RightSide, LeftSideProps } from 'shared/containers';
+
+interface BodyProps extends operationPropType, LeftSideProps {}
 
 const Body: FC<BodyProps> = ({
   num0,
