@@ -1,6 +1,8 @@
 import { FC, useState } from 'react';
-import { divide, subtract, multiply, add, showResult } from '../../utils';
-import { Result, Operations, ClearWrapper, Number } from '../components';
+import { Body, LeftSide } from '..';
+import { divide, subtract, multiply, add, showResult } from '../../../utils';
+import { Result, Operations, Number } from '../../components';
+import RightSide from '../RightSide';
 
 const CalculatorContainer: FC = () => {
   const [result, setResult] = useState(0);
@@ -44,32 +46,16 @@ const CalculatorContainer: FC = () => {
   return (
     <>
       <Result result={result} />
-      <div className='Body'>
-        <div className='left-side'>
-          <ClearWrapper>
-            <Operations sign={'clear'} onClick={clear} />
-          </ClearWrapper>
-          {renderNumbers()}
-        </div>
-        <div className='right-side text-center'>
-          <Operations sign='/' onClick={() => divide(num0, num1, setMethod)} />
-          <Operations
-            sign='-'
-            onClick={() => subtract(num0, num1, setMethod)}
-          />
-          <Operations
-            sign='*'
-            onClick={() => multiply(num0, num1, setMethod)}
-          />
-          <Operations sign='+' onClick={() => add(num0, num1, setMethod)} />
-          <Operations
-            sign='='
-            onClick={() =>
-              showResult({ result, num0, num1, setMethod, setResult, method })
-            }
-          />
-        </div>
-      </div>
+      <Body
+        result={result}
+        num0={num0}
+        num1={num1}
+        setMethod={setMethod}
+        setResult={setResult}
+        method={method}
+        clear={clear}
+        children={renderNumbers()}
+      />
     </>
   );
 };
